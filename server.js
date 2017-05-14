@@ -44,9 +44,9 @@ function getDataHits(boardName, queries){
   let directoryLength = 0;
   let files = fs.readdirSync("./"+boardName);
   files.forEach(fileName => {
-    let file = fs.readFileSync(__dirname + "/" + boardName + "/" + fileName, "utf-8");
-    file = JSON.parse(file);
-    file.forEach(dataObj => {
+    let fileContent = fs.readFileSync(__dirname + "/" + boardName + "/" + fileName, "utf-8");
+    dataObjs = JSON.parse(fileContent);
+    dataObjs.forEach(dataObj => {
       let dataObjValue = objectValues(dataObj).toString().toLowerCase();
       let hit = queries.every( query => dataObjValue.includes(query.toLowerCase()));
       if(hit && !isDuplicate(firstTimeData, dataObj.link)){
