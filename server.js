@@ -64,7 +64,6 @@ function getDataHits(boardName, queries){
       }
     })
   });
-  console.log(contentHitsObject);
   return contentHitsObject;
 }
 
