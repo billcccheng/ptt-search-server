@@ -41,8 +41,10 @@ function isDuplicate(firstTimeData, link){
 function getDataHits(boardName, queries){
   let contentHitsObject = {};
   let firstTimeData = new Set();
-  for(let i = 0; i < 60; i++){
-    let file = fs.readFileSync(__dirname + "/" + boardName + "/data-" + i + ".json", "utf-8");
+  let directoryLength = 0;
+  let files = fs.readdirSync("./"+boardName);
+  files.forEach(fileName => {
+    let file = fs.readFileSync(__dirname + "/" + boardName + "/" + fileName, "utf-8");
     file = JSON.parse(file);
     file.forEach(dataObj => {
       let dataObjValue = objectValues(dataObj).toString().toLowerCase();
@@ -61,7 +63,8 @@ function getDataHits(boardName, queries){
         }
       }
     })
-  }
+  });
+  console.log(contentHitsObject);
   return contentHitsObject;
 }
 
