@@ -1843,15 +1843,6 @@
     "標題": "Re: [討論] 請問如果自己的上司很擺爛..."
 },
 {
-    "ID": 213, 
-    "link": "https://www.ptt.cc/bbs/Soft_Job/M.1422602657.A.F9C.html", 
-    "作者": "Lordaeron (Terry)", 
-    "內文": "  ※ 引述《femlro (股權成就你的財富)》之銘言：  : 這都絕跡3~5年以上的骨董了  : 有公司拿來做ERP開發  : 是因為看中他被微軟淘汰沒有盜版的問題嗎?  : 加上可以用資料庫做連線  : 否則用這開發ERP  : 現在有很多工具可以用  : 用fox pro的理由是什麼?  : 想請教一下，謝謝!  都2015年了, 還是有人為了用什麼LANGUAGE 去質疑別人.  寫程式是為了解決問題, 用什麼LANGUAGE 來寫, 是為了方  便寫的人, 不是為了\"新\" \"屌\" \"帥\" \"潮\"    --  ", 
-    "推文": "Blueshiva: 噗嗤，你之前不是才在質疑用Python嗎？ XDDD knives: 嘛，php表示:雖然大家都看不起我，可是還是在用我阿 leolarrel: Blueshiva 大,這臉打的真響,讚 y2468101216: %%%%%%%% Lordaeron: 質疑用Python嗎？ 質疑? 我只說它慢, 不適合. 沒說 Lordaeron: 而且是script language, 不專指python. 你有讀內文? Lordaeron: 還是連中文都看不懂? Lordaeron: 要講python,現在一狗票人用,不就是因為GOOGLE說它好? Blueshiva: 也是，你不是質疑Python這個語言，你是質疑script lang Blueshiva: 這\"種\"語言 XDD 話說回來，你何時才要開示Dropbox到底 Blueshiva: 是要驗證什麼了沒有？ XDDD Lordaeron: dropbox需要速度嗎? Lordaeron: dropbox算產品嗎? 你要不要問一下TOMCAT? Lordaeron: 中文程度好好加強!! Lordaeron: dropbox這種IO BOUND的應用,搞到後來還要自已搞一個 Lordaeron: python interpreter. 你還想扯什麼? Lordaeron: 你還可以扯Quora這個全面換Cython的. Blueshiva: 照你那\"產品必須有實體\"的定義，dropbox當然不是產品啊 Blueshiva: 然後你又說script lang只是用來驗證的，而dropbox就是 Blueshiva: 用屬於script lang的python做的，所以照你的說法， Blueshiva: python是用來驗證的，只是要驗證什麼一直不肯講啊... Blueshiva: 然後你不要自己臉痛就覺得有人在打，你要這麼用力的撞 Blueshiva: 牆我們看了也是很無奈啊...╮(╯_╰)╭ Lordaeron: 別扯開了哦,我回應的PO是在資料量大之下,SCRIPT LANG Lordaeron: 驗證什麼?你想驗什麼就什麼,要我什麼? 我會用MATLAB Lordaeron: 來驗證我的image processing算法,但我不會說用python Lordaeron: 來寫個產品. Lordaeron: 而你最愛的dropbox可是找人專做了interpreter你看到了? Lordaeron: 你的臉打得夠痛了嗎? Lordaeron: http://www.verydemo.com/demo_c122_i11771.html 最後 Lordaeron: 它也不會100% python. Lordaeron: I/O bound應用都還是要這樣搞,你說怎麼辨....哈.... Blueshiva: 所以說，你覺得dropbox是個I/O bound的東西，而且他不 Blueshiva: 是產品，然後他也的確搞了interpreter，符合你說script Blueshiva: lang速度慢，不適合做產品的假說。然後你說這種東西只 Blueshiva: 是用來驗證，你也說你會用matlab驗證你的算法。ok啊， Blueshiva: 所以我問你dropbox是想驗證什麼東西嘛 ╮(╯_╰)╭ Blueshiva: 你總不能前面舉了一堆假設，好像也都符合，結果結論推 Blueshiva: 不出來嘛...這根本不是理性的論述啊，還是你要說，連費 Blueshiva: 曼都說：這是個不科學的時代，所以你也只是來隨口講講? Lordaeron: 邏輯:python慢,適合驗證用,不適合作產品,DROPBOX 不是 Lordaeron: 產品,所以FIT這個定義. Lordaeron: see? 再來,整天掛在口中的dropbox想拗它是產品, Lordaeron: python是夠快的,我就只好舉出,它要搞interpreter,還是y Lordaeron: 有native languge的部分來反證,python不夠快. Lordaeron: see? 你的本事才這麼一點, 就別出來鬧了. Blueshiva: \"是script language, 不專指python\"自己要不要先看看之 Blueshiva: 前自己講了啥？你老是這麼猛力去撞牆我實在很擔心牆會 Blueshiva: 不會垮啊...另外，你產品的定義是\"要有質量的物品\"，這 Blueshiva: 點老實說我看不出用哪個語言可以創造出質量啊...莫非你 Blueshiva: 要說\"擲地有聲\"？別逗了好不好 (茶) Blueshiva: 然後你現在又改口\"python是夠快的\"，你整天改來改去的 Blueshiva: 改得我好混亂啊～～～ Lordaeron: 中文問題?我啥時說python夠快? 不會吧. Lordaeron: 你沒問題吧?? Lordaeron: 看來邏輯不好,中文也不好.", 
-    "日期": "Fri Jan 30 15:24:14 2015", 
-    "標題": "Re: [請益] microsoft fox pro"
-},
-{
     "ID": 214, 
     "link": "https://www.ptt.cc/bbs/Soft_Job/M.1422602817.A.40E.html", 
     "作者": "angelagrabis (綺拉)", 
