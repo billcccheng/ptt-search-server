@@ -2,7 +2,6 @@ let express = require("express");
 let app = express()
 let fs = require("fs");
 let promise = require("promise");
-let objectValues = require("object-values");
 
 let allowCrossDomain = function(req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
@@ -47,7 +46,7 @@ function getDataHits(boardName, queries){
     let fileContent = fs.readFileSync(__dirname + "/" + boardName + "/" + fileName, "utf-8");
     dataObjs = JSON.parse(fileContent);
     dataObjs.forEach(dataObj => {
-      let dataObjValue = objectValues(dataObj).toString().toLowerCase();
+      let dataObjValue = Object.keys(dataObj).map((k) => dataObj[k]).toString().toLowerCase();
       let hit = queries.every( query => dataObjValue.includes(query.toLowerCase()));
       if(hit && !isDuplicate(firstTimeData, dataObj.link)){
         let date = dataObj.日期.split(" ");
@@ -67,7 +66,7 @@ function getDataHits(boardName, queries){
   return contentHitsObject;
 }
 
-let server = app.listen(process.env.PORT||8081, function(){
+let server = app.listen(process.env.PORT||8080, function(){
   let port = server.address().port;
   console.log("App running on port %s ",port);
 });
