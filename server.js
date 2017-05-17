@@ -56,7 +56,7 @@ function getDataHits(boardName, queries){
             contentHitsObject[year] = [];
           }
           let contentHit = {};
-          contentHit.title = dataObj.title;
+          contentHit.title = dataObj.title ? dataObj.title : "No title";
           contentHit.link = dataObj.link;
           contentHitsObject[year].push(contentHit);
         }
