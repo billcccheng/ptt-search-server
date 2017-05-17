@@ -49,14 +49,14 @@ function getDataHits(boardName, queries){
       let dataObjValue = Object.keys(dataObj).map((k) => dataObj[k]).toString().toLowerCase();
       let hit = queries.every( query => dataObjValue.includes(query.toLowerCase()));
       if(hit && !isDuplicate(firstTimeData, dataObj.link)){
-        let date = dataObj.日期.split(" ");
+        let date = dataObj.date.split(" ");
         let year = date[date.length - 1];
         if(/^\d+$/.test(year)){
           if(!(year in contentHitsObject)){
             contentHitsObject[year] = [];
           }
           let contentHit = {};
-          contentHit.title = dataObj.標題;
+          contentHit.title = dataObj.title;
           contentHit.link = dataObj.link;
           contentHitsObject[year].push(contentHit);
         }
@@ -66,7 +66,7 @@ function getDataHits(boardName, queries){
   return contentHitsObject;
 }
 
-let server = app.listen(process.env.PORT||8080, function(){
+let server = app.listen(process.env.PORT||5000, function(){
   let port = server.address().port;
   console.log("App running on port %s ",port);
 });
