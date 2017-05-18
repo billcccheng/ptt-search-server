@@ -41,9 +41,9 @@ function getDataHits(boardName, queries){
   let contentHitsObject = {};
   let firstTimeData = new Set();
   let directoryLength = 0;
-  let files = fs.readdirSync("./"+boardName);
+  let files = fs.readdirSync("./boards/"+boardName);
   files.forEach(fileName => {
-    let fileContent = fs.readFileSync(__dirname + "/" + boardName + "/" + fileName, "utf-8");
+    let fileContent = fs.readFileSync(__dirname + "/boards/" + boardName + "/" + fileName, "utf-8");
     dataObjs = JSON.parse(fileContent);
     dataObjs.forEach(dataObj => {
       let dataObjValue = Object.keys(dataObj).map((k) => dataObj[k]).toString().toLowerCase();
