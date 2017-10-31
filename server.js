@@ -57,10 +57,16 @@ function getDataHits(boardName, queries){
           let contentHit = {};
           contentHit.title = dataObj.title ? dataObj.title : "No title";
           contentHit.link = dataObj.link;
+          contentHit.date = dataObj.date;
           contentHitsObject[year].push(contentHit);
         }
       }
-    })
+    });
+    Object.keys(contentHitsObject).forEach((year) => {
+        contentHitsObject[year].sort((a,b)=>{
+            return new Date(b.date) - new Date(a.date);
+        });
+    });
   });
   return contentHitsObject;
 }
