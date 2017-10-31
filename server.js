@@ -63,9 +63,11 @@ function getDataHits(boardName, queries){
       }
     });
     Object.keys(contentHitsObject).forEach((year) => {
-        contentHitsObject[year].sort((a,b)=>{
-            return new Date(b.date) - new Date(a.date);
-        });
+      contentHitsObject[year].sort((a,b)=>{
+        if(!a.date) a.date = -8640000000000000;
+        if(!b.date) b.date = -8640000000000000;
+        return new Date(b.date) - new Date(a.date);
+      });
     });
   });
   return contentHitsObject;
