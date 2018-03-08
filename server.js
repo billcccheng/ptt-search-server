@@ -1,5 +1,5 @@
 let express = require("express");
-let app = express()
+let app = express();
 let fs = require("fs");
 let promise = require("promise");
 
